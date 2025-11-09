@@ -1,0 +1,32 @@
+[package]
+name = "position_backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+async-trait = "0.1"
+axum = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+tokio = { version = "1.35", features = ["macros", "rt-multi-thread", "signal", "time"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+anchor-client = "0.29"
+solana-sdk = "1.17"
+solana-client = "1.17"
+solana-program = "1.17"
+dashmap = "5.5"
+futures = "0.3"
+tokio-postgres = "0.7"
+deadpool-postgres = { version = "0.12", features = ["serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+derive_more = "0.99"
+hex = "0.4"
+parking_lot = "0.12"
+serde_with = "3.4"
+rust_decimal = { version = "1", features = ["serde"] }
+strum = { version = "0.25", features = ["derive"] }
+utoipa = { version = "4", features = ["axum_extras"] }
+utoipa-swagger-ui = { version = "4", features = ["axum"] }
