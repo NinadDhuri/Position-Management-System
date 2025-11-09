@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "programs/position_manager",
+    "backend",
+]
+resolver = "2"
